@@ -1,0 +1,1046 @@
+.aboutHero {
+
+    min-height: 650px;
+
+    position: relative;
+
+    display: grid;
+
+    place-items: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0, 130, 255, 0.2),
+            transparent 42%
+        ),
+        #020308;
+}
+
+
+.aboutHeroGlow {
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 213, 255, 0.1);
+
+    filter: blur(130px);
+}
+
+
+.aboutHeroContent {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: min(90%, 900px);
+}
+
+
+.aboutHero h1 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(50px, 7vw, 86px);
+
+    line-height: 0.96;
+
+    letter-spacing: -0.05em;
+}
+
+
+.aboutHero h1 span {
+
+    display: block;
+
+    color: var(--cyan);
+}
+
+
+.aboutHero p {
+
+    max-width: 700px;
+
+    margin: 28px auto 0;
+
+    color: var(--muted);
+
+    font-size: 17px;
+}
+
+
+
+.aboutSection {
+
+    padding: 110px 0;
+
+    background: #020308;
+}
+
+
+.aboutContainer {
+
+    width: min(92%, 1240px);
+
+    margin: auto;
+}
+
+
+.aboutTwoColumn {
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 90px;
+}
+
+
+.aboutSectionHeading h2,
+.aboutSectionIntro h2,
+.heritageContent h2,
+.approachGrid h2,
+.sportsContent h2,
+.clientsHeading h2,
+.qualityStatementGrid h2,
+.missionGrid h2,
+.visionGrid h2,
+.teamSection h2,
+.aboutCTA h2 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(40px, 5vw, 62px);
+
+    line-height: 1;
+
+    letter-spacing: -0.04em;
+}
+
+
+.aboutSectionHeading h2 span,
+.aboutSectionIntro h2 span,
+.heritageContent h2 span,
+.approachGrid h2 span,
+.sportsContent h2 span,
+.clientsHeading h2 span,
+.qualityStatementGrid h2 span,
+.missionGrid h2 span,
+.visionGrid h2 span,
+.teamSection h2 span,
+.aboutCTA h2 span {
+
+    color: var(--cyan);
+}
+
+
+.aboutText p {
+
+    margin-bottom: 22px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+
+.heritageSection {
+
+    padding: 120px 0;
+
+    background:
+        radial-gradient(
+            circle at 20% 50%,
+            rgba(0, 120, 255, 0.14),
+            transparent 35%
+        ),
+        #03060d;
+}
+
+
+.heritageGrid {
+
+    display: grid;
+
+    grid-template-columns: 0.7fr 1.3fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+
+.heritageNumber {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    min-height: 360px;
+
+    padding: 40px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 190, 255, 0.12),
+            transparent 60%
+        );
+}
+
+
+.heritageNumber span {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(70px, 9vw, 120px);
+
+    line-height: 1;
+
+    color: var(--cyan);
+
+    letter-spacing: -0.06em;
+}
+
+
+.heritageNumber small {
+
+    margin-top: 15px;
+
+    color: var(--muted);
+
+    font-size: 11px;
+}
+
+
+.heritageContent p {
+
+    max-width: 700px;
+
+    margin-top: 25px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+
+.aboutSectionIntro {
+
+    max-width: 750px;
+
+    margin-bottom: 50px;
+}
+
+
+.aboutSectionIntro > p {
+
+    margin-top: 22px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+}
+
+
+.capabilityGrid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.capabilityCard {
+
+    min-height: 230px;
+
+    padding: 28px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    background: #070d18;
+
+    transition: 0.25s ease;
+}
+
+
+.capabilityCard:hover {
+
+    transform: translateY(-4px);
+
+    border-color: rgba(0, 217, 255, 0.55);
+}
+
+
+.capabilityCard > span {
+
+    color: var(--cyan);
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+
+.capabilityCard h3 {
+
+    margin-top: 60px;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 23px;
+}
+
+
+.capabilityCard p {
+
+    margin-top: 10px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+}
+
+
+
+.approachSection {
+
+    padding: 120px 0;
+
+    background: #03060d;
+}
+
+
+.approachGrid {
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 100px;
+
+    align-items: start;
+}
+
+
+.approachGrid > div:first-child > p {
+
+    max-width: 550px;
+
+    margin-top: 25px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+.approachSteps {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.approachStep {
+
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    gap: 20px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+.approachStep strong {
+
+    color: var(--cyan);
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 20px;
+}
+
+
+.approachStep h3 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 22px;
+}
+
+
+.approachStep p {
+
+    margin-top: 7px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+}
+
+
+
+.sportsSection {
+
+    padding: 120px 0;
+
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(0, 150, 255, 0.14),
+            transparent 35%
+        ),
+        #020308;
+}
+
+
+.sportsGrid {
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+
+.sportsVisual {
+
+    min-height: 450px;
+
+    display: grid;
+
+    place-items: center;
+}
+
+
+.sportsCircle {
+
+    width: 310px;
+    height: 310px;
+
+    display: grid;
+
+    place-items: center;
+
+    border: 2px solid var(--cyan);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 50px rgba(0, 210, 255, 0.2),
+        inset 0 0 50px rgba(0, 210, 255, 0.08);
+}
+
+
+.sportsCircle span {
+
+    color: var(--cyan);
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 85px;
+
+    font-weight: 700;
+}
+
+
+.sportsContent p {
+
+    max-width: 650px;
+
+    margin-top: 25px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+.sportsTags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 30px;
+}
+
+
+.sportsTags span {
+
+    padding: 9px 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 5px;
+
+    color: var(--cyan);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.1em;
+}
+
+
+
+.clientsSection {
+
+    padding: 120px 0;
+
+    background: #03060d;
+}
+
+
+.clientsHeading {
+
+    max-width: 750px;
+
+    margin-bottom: 50px;
+}
+
+
+.clientsHeading p {
+
+    margin-top: 20px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+
+.athleteGrid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.athleteCard {
+
+    min-height: 190px;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(0, 160, 255, 0.1),
+            transparent 50%
+        ),
+        #070d18;
+}
+
+
+.athleteCard span {
+
+    color: var(--cyan);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.13em;
+}
+
+
+.athleteCard h3 {
+
+    margin-top: 8px;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 22px;
+}
+
+
+.clientStatement {
+
+    max-width: 850px;
+
+    margin: 60px auto 0;
+
+    padding: 35px;
+
+    border-left: 2px solid var(--cyan);
+
+    background: rgba(0, 170, 255, 0.04);
+}
+
+
+.clientStatement p {
+
+    color: var(--softWhite);
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 22px;
+
+    line-height: 1.5;
+}
+
+
+
+.qualityStatement {
+
+    padding: 120px 0;
+
+    background: #020308;
+}
+
+
+.qualityStatementGrid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 90px;
+
+    align-items: center;
+}
+
+
+.qualityStatementGrid p {
+
+    margin-bottom: 20px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+.verificationNote {
+
+    padding: 15px;
+
+    border-left: 2px solid var(--cyan);
+
+    font-size: 10px !important;
+}
+
+
+
+.missionSection {
+
+    padding: 110px 0;
+
+    background:
+        radial-gradient(
+            circle at 20% 50%,
+            rgba(0, 130, 255, 0.14),
+            transparent 35%
+        ),
+        #03060d;
+}
+
+
+.missionGrid {
+
+    display: grid;
+
+    grid-template-columns: 140px 1fr;
+
+    gap: 50px;
+
+    align-items: start;
+}
+
+
+.missionNumber {
+
+    color: var(--cyan);
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 90px;
+
+    line-height: 1;
+
+    opacity: 0.7;
+}
+
+
+.missionGrid p {
+
+    max-width: 750px;
+
+    margin-top: 25px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+
+.visionSection {
+
+    padding: 110px 0;
+
+    background: #020308;
+}
+
+
+.visionGrid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 90px;
+
+    align-items: center;
+}
+
+
+.visionGrid p {
+
+    color: var(--muted);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+
+.teamSection {
+
+    padding: 120px 0;
+
+    background: #03060d;
+}
+
+
+.teamGrid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 50px;
+}
+
+
+.teamCard {
+
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    background: #070d18;
+}
+
+
+.teamImage {
+
+    height: 360px;
+
+    display: grid;
+
+    place-items: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 185, 255, 0.16),
+            transparent 48%
+        ),
+        #02050a;
+}
+
+
+.teamImage span {
+
+    color: var(--cyan);
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 50px;
+
+    font-weight: 700;
+}
+
+
+.teamInfo {
+
+    padding: 22px;
+}
+
+
+.teamInfo h3 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 20px;
+}
+
+
+.teamInfo span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: var(--cyan);
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+
+.aboutCTA {
+
+    padding: 130px 20px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0, 150, 255, 0.2),
+            transparent 42%
+        ),
+        #020308;
+}
+
+
+.aboutCTAContent {
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+
+.aboutCTA h2 {
+
+    margin-top: 5px;
+}
+
+
+.aboutCTA p {
+
+    max-width: 600px;
+
+    margin: 25px auto 30px;
+
+    color: var(--muted);
+}
+
+
+.aboutCTAButtons {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+
+@media (max-width: 900px) {
+
+    .aboutTwoColumn,
+    .heritageGrid,
+    .approachGrid,
+    .sportsGrid,
+    .qualityStatementGrid,
+    .visionGrid {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+
+    .capabilityGrid,
+    .athleteGrid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .teamGrid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .aboutHero {
+
+        min-height: 520px;
+
+    }
+
+
+    .aboutHero h1 {
+
+        font-size: 48px;
+
+    }
+
+
+    .aboutSection,
+    .heritageSection,
+    .approachSection,
+    .sportsSection,
+    .clientsSection,
+    .qualityStatement,
+    .missionSection,
+    .visionSection,
+    .teamSection {
+
+        padding: 75px 0;
+
+    }
+
+
+    .capabilityGrid,
+    .athleteGrid,
+    .teamGrid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .heritageNumber {
+
+        min-height: 280px;
+
+    }
+
+
+    .heritageNumber span {
+
+        font-size: 80px;
+
+    }
+
+
+    .sportsCircle {
+
+        width: 240px;
+
+        height: 240px;
+
+    }
+
+
+    .sportsCircle span {
+
+        font-size: 65px;
+
+    }
+
+
+    .missionGrid {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .missionNumber {
+
+        font-size: 60px;
+
+    }
+
+
+    .teamImage {
+
+        height: 300px;
+
+    }
+
+
+    .clientStatement p {
+
+        font-size: 17px;
+
+    }
+
+}
