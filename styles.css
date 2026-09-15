@@ -1,0 +1,1082 @@
+:root {
+    --black: #020308;
+    --deepBlack: #05070d;
+    --navy: #071426;
+    --blue: #006eff;
+    --electricBlue: #008cff;
+    --cyan: #00d9ff;
+    --lightCyan: #7df4ff;
+    --white: #ffffff;
+    --softWhite: #dce8f7;
+    --muted: #8b9bb0;
+    --border: rgba(0, 154, 255, 0.2);
+    --card: rgba(7, 20, 38, 0.72);
+
+    --maxWidth: 1240px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--black);
+    color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+button {
+    font: inherit;
+}
+
+
+.siteHeader {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(2, 3, 8, 0.86);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--border);
+}
+
+
+.headerContainer {
+    width: min(92%, var(--maxWidth));
+    height: 86px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.brandLogo {
+    width: 68px;
+    height: 68px;
+    object-fit: contain;
+}
+
+
+.desktopNav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+
+.desktopNav a {
+    color: var(--softWhite);
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+
+.desktopNav a:hover {
+    color: var(--cyan);
+}
+
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.iconButton,
+.menuButton {
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+.cartButton {
+    border: 1px solid var(--border);
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.cartCount {
+    margin-left: 6px;
+    color: var(--cyan);
+}
+
+
+.menuButton {
+    display: none;
+}
+
+
+.mobileNav {
+    display: none;
+}
+
+
+.heroSection {
+    min-height: 760px;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 70% 40%, rgba(0, 109, 255, 0.16), transparent 35%),
+        linear-gradient(135deg, #020308, #061225);
+}
+
+
+.heroContainer {
+    width: min(92%, var(--maxWidth));
+    min-height: 760px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+}
+
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--cyan);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+}
+
+
+.heroContent h1 {
+    max-width: 720px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+}
+
+
+.heroContent h1 span,
+.sectionHeading h2 span,
+.scienceContent h2 span,
+.aboutGrid h2 span,
+.ctaContent h2 span {
+    color: var(--cyan);
+}
+
+
+.heroText {
+    max-width: 590px;
+    margin: 28px 0;
+    color: var(--softWhite);
+    font-size: 18px;
+}
+
+
+.heroActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+
+.primaryButton,
+.secondaryButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0 24px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 800;
+    transition: 0.25s ease;
+}
+
+
+.primaryButton {
+    background: linear-gradient(110deg, var(--blue), var(--cyan));
+    color: #00101c;
+    box-shadow: 0 0 28px rgba(0, 174, 255, 0.24);
+}
+
+
+.primaryButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 40px rgba(0, 174, 255, 0.4);
+}
+
+
+.secondaryButton {
+    border: 1px solid var(--border);
+    color: var(--white);
+}
+
+
+.secondaryButton:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+}
+
+
+.heroTrust {
+    display: flex;
+    gap: 30px;
+    margin-top: 54px;
+}
+
+
+.heroTrust div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.heroTrust strong {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 22px;
+}
+
+
+.heroTrust span {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+
+.heroVisual {
+    position: relative;
+    height: 560px;
+    display: grid;
+    place-items: center;
+}
+
+
+.heroLogo {
+    position: relative;
+    z-index: 3;
+    width: min(360px, 70%);
+    border-radius: 50%;
+    box-shadow:
+        0 0 40px rgba(0, 113, 255, 0.6),
+        0 0 120px rgba(0, 207, 255, 0.18);
+}
+
+
+.heroRing {
+    position: absolute;
+    border: 1px solid rgba(0, 190, 255, 0.32);
+    border-radius: 50%;
+}
+
+
+.heroRingOuter {
+    width: 540px;
+    height: 540px;
+}
+
+
+.heroRingMiddle {
+    width: 430px;
+    height: 430px;
+    border-color: rgba(0, 110, 255, 0.5);
+}
+
+
+.heroProductGlow {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background: var(--cyan);
+    filter: blur(130px);
+    opacity: 0.22;
+}
+
+
+.heroOrbit {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--cyan);
+    box-shadow: 0 0 24px var(--cyan);
+}
+
+
+.orbitOne {
+    top: 80px;
+    right: 80px;
+}
+
+
+.orbitTwo {
+    bottom: 90px;
+    left: 70px;
+}
+
+
+.heroGlow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+}
+
+
+.heroGlowOne {
+    width: 300px;
+    height: 300px;
+    right: 0;
+    top: 0;
+    background: rgba(0, 100, 255, 0.14);
+}
+
+
+.heroGlowTwo {
+    width: 260px;
+    height: 260px;
+    left: 20%;
+    bottom: -100px;
+    background: rgba(0, 220, 255, 0.08);
+}
+
+
+.trustSection {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: #040914;
+}
+
+
+.trustContainer {
+    width: min(92%, var(--maxWidth));
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.trustItem {
+    min-height: 105px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-right: 1px solid var(--border);
+}
+
+
+.trustItem:last-child {
+    border-right: 0;
+}
+
+
+.trustIcon {
+    color: var(--cyan);
+    font-size: 22px;
+}
+
+
+.trustItem div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.trustItem strong {
+    font-size: 13px;
+}
+
+
+.trustItem span {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+
+.section {
+    padding: 110px 0;
+}
+
+
+.sectionContainer {
+    width: min(92%, var(--maxWidth));
+    margin: auto;
+}
+
+
+.sectionHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+
+.sectionHeading h2,
+.scienceContent h2,
+.aboutGrid h2,
+.ctaContent h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(38px, 5vw, 60px);
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+
+
+.sectionHeading p {
+    max-width: 420px;
+    color: var(--muted);
+}
+
+
+.goalGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+
+.goalCard {
+    position: relative;
+    min-height: 290px;
+    padding: 30px;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 100% 0, rgba(0, 162, 255, 0.16), transparent 45%),
+        var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+
+.goalCard:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 213, 255, 0.6);
+}
+
+
+.goalNumber {
+    color: var(--cyan);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+.goalCard h3 {
+    margin-top: 80px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 25px;
+}
+
+
+.goalCard p {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+
+.cardArrow {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    color: var(--cyan);
+    font-size: 22px;
+}
+
+
+.productSection {
+    padding: 110px 0;
+    background: #03060d;
+}
+
+
+.textButton {
+    color: var(--cyan);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+
+.productCard {
+    overflow: hidden;
+    background: #070d18;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+
+.productImage {
+    height: 300px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(circle, rgba(0, 182, 255, 0.18), transparent 45%),
+        #02050a;
+}
+
+
+.productBadge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 6px 9px;
+    border-radius: 4px;
+    background: rgba(0, 200, 255, 0.1);
+    color: var(--cyan);
+    font-size: 9px;
+    font-weight: 800;
+}
+
+
+.productPlaceholder {
+    width: 150px;
+    height: 190px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(0, 216, 255, 0.6);
+    border-radius: 12px;
+    color: var(--cyan);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    transform: perspective(500px) rotateY(-8deg);
+    box-shadow: 0 0 50px rgba(0, 190, 255, 0.12);
+}
+
+
+.productInfo {
+    padding: 22px;
+}
+
+
+.productCategory {
+    color: var(--cyan);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+}
+
+
+.productInfo h3 {
+    margin-top: 8px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+}
+
+
+.productInfo p {
+    margin: 10px 0 20px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+
+.productBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.productBottom strong {
+    font-size: 18px;
+}
+
+
+.smallButton {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 11px;
+    background: transparent;
+    color: var(--cyan);
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.scienceSection {
+    padding: 120px 5%;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(0, 104, 255, 0.16), transparent 30%),
+        #02040a;
+}
+
+
+.scienceGrid {
+    width: min(92%, 1240px);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: center;
+    gap: 90px;
+}
+
+
+.scienceVisual {
+    position: relative;
+    height: 500px;
+    display: grid;
+    place-items: center;
+}
+
+
+.scienceCircle {
+    width: 310px;
+    height: 310px;
+    border: 2px solid var(--cyan);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    box-shadow:
+        0 0 40px rgba(0, 193, 255, 0.25),
+        inset 0 0 40px rgba(0, 193, 255, 0.08);
+}
+
+
+.scienceCircle span {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--cyan);
+}
+
+
+.scienceLine {
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    border: 1px solid rgba(0, 100, 255, 0.3);
+    border-radius: 50%;
+}
+
+
+.scienceContent > p {
+    max-width: 650px;
+    margin: 24px 0 36px;
+    color: var(--muted);
+}
+
+
+.sciencePoints {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 38px;
+}
+
+
+.sciencePoints div {
+    display: flex;
+    gap: 14px;
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+
+.sciencePoints strong {
+    color: var(--cyan);
+}
+
+
+.sciencePoints span {
+    color: var(--softWhite);
+    font-size: 12px;
+}
+
+
+.aboutGrid {
+    width: min(92%, var(--maxWidth));
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+
+.largeText {
+    color: var(--softWhite);
+    font-size: 21px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+.resourceSection {
+    padding: 110px 0;
+    background: #040810;
+}
+
+
+.resourceGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+
+.resourceCard {
+    min-height: 290px;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: #070d18;
+}
+
+
+.resourceCard > span {
+    color: var(--cyan);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+}
+
+
+.resourceCard h3 {
+    margin: 70px 0 14px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 25px;
+}
+
+
+.resourceCard p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+
+.resourceCard a {
+    display: inline-block;
+    margin-top: 22px;
+    color: var(--cyan);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+.ctaSection {
+    position: relative;
+    padding: 130px 20px;
+    text-align: center;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at center, rgba(0, 147, 255, 0.22), transparent 42%),
+        #020308;
+}
+
+
+.ctaContent {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.ctaContent p {
+    max-width: 580px;
+    margin: 25px auto 32px;
+    color: var(--muted);
+}
+
+
+.siteFooter {
+    background: #010207;
+    border-top: 1px solid var(--border);
+    padding: 70px 0 25px;
+}
+
+
+.footerContainer {
+    width: min(92%, var(--maxWidth));
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+    gap: 50px;
+}
+
+
+.footerBrand img {
+    width: 100px;
+}
+
+
+.footerBrand p {
+    max-width: 250px;
+    margin-top: 15px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+
+.footerColumn h4 {
+    margin-bottom: 10px;
+    color: var(--white);
+    font-size: 13px;
+}
+
+
+.footerColumn a {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+
+.footerColumn a:hover {
+    color: var(--cyan);
+}
+
+
+.footerBottom {
+    width: min(92%, var(--maxWidth));
+    margin: 60px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: #617086;
+    font-size: 10px;
+}
+
+
+@media (max-width: 1000px) {
+
+    .desktopNav {
+        display: none;
+    }
+
+    .menuButton {
+        display: block;
+    }
+
+    .mobileNav {
+        padding: 20px 5%;
+        border-top: 1px solid var(--border);
+        background: var(--deepBlack);
+    }
+
+    .mobileNav.active {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .mobileNav a {
+        color: var(--softWhite);
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .heroContainer {
+        grid-template-columns: 1fr;
+        padding: 80px 0;
+    }
+
+    .heroVisual {
+        height: 430px;
+    }
+
+    .heroRingOuter {
+        width: 400px;
+        height: 400px;
+    }
+
+    .heroRingMiddle {
+        width: 320px;
+        height: 320px;
+    }
+
+    .goalGrid,
+    .productGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trustContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .scienceGrid,
+    .aboutGrid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .footerContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .headerContainer {
+        height: 72px;
+    }
+
+    .brandLogo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .cartButton {
+        display: none;
+    }
+
+    .heroSection,
+    .heroContainer {
+        min-height: auto;
+    }
+
+    .heroContainer {
+        padding: 80px 0 50px;
+    }
+
+    .heroContent h1 {
+        font-size: 48px;
+    }
+
+    .heroText {
+        font-size: 15px;
+    }
+
+    .heroTrust {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    .heroVisual {
+        height: 350px;
+    }
+
+    .heroLogo {
+        width: 230px;
+    }
+
+    .heroRingOuter {
+        width: 330px;
+        height: 330px;
+    }
+
+    .heroRingMiddle {
+        width: 270px;
+        height: 270px;
+    }
+
+    .trustContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .trustItem {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .section,
+    .productSection,
+    .scienceSection,
+    .resourceSection {
+        padding: 75px 0;
+    }
+
+    .sectionHeading {
+        display: block;
+    }
+
+    .sectionHeading p {
+        margin-top: 20px;
+    }
+
+    .goalGrid,
+    .productGrid,
+    .resourceGrid,
+    .sciencePoints {
+        grid-template-columns: 1fr;
+    }
+
+    .scienceVisual {
+        height: 350px;
+    }
+
+    .scienceCircle {
+        width: 230px;
+        height: 230px;
+    }
+
+    .scienceCircle span {
+        font-size: 60px;
+    }
+
+    .scienceLine {
+        width: 300px;
+        height: 300px;
+    }
+
+    .footerContainer {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+    }
+
+    .footerBrand {
+        grid-column: 1 / -1;
+    }
+
+    .footerBottom {
+        display: block;
+    }
+
+    .footerBottom span {
+        display: block;
+        margin-bottom: 8px;
+    }
+}
