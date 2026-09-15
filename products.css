@@ -1,0 +1,444 @@
+.shopHero {
+    position: relative;
+    min-height: 470px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0, 155, 255, 0.18),
+            transparent 42%
+        ),
+        #020308;
+}
+
+
+.shopHeroGlow {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: rgba(0, 207, 255, 0.1);
+    filter: blur(120px);
+}
+
+
+.shopHeroContent {
+    position: relative;
+    z-index: 2;
+    width: min(90%, 850px);
+}
+
+
+.shopHero h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(48px, 7vw, 82px);
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+}
+
+
+.shopHero h1 span {
+    color: var(--cyan);
+}
+
+
+.shopHero p {
+    max-width: 650px;
+    margin: 25px auto 0;
+    color: var(--muted);
+    font-size: 16px;
+}
+
+
+.shopSection {
+    padding: 90px 0;
+    background: #03060d;
+}
+
+
+.shopLayout {
+    width: min(92%, 1240px);
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 45px;
+}
+
+
+.filterPanel {
+    align-self: start;
+    position: sticky;
+    top: 110px;
+
+    padding: 24px;
+
+    background: #070d18;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+
+.filterHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+
+    color: var(--cyan);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+
+.filterHeader button {
+    border: 0;
+    background: none;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 10px;
+}
+
+
+.filterGroup {
+    padding-top: 25px;
+}
+
+
+.filterGroup h3 {
+    margin-bottom: 16px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 15px;
+}
+
+
+.filterOption {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 12px 0;
+
+    color: var(--muted);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+.filterOption input {
+    accent-color: var(--cyan);
+}
+
+
+.productsToolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+.resultsLabel {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+
+.productsToolbar strong {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+
+.productsToolbar select {
+    padding: 10px 14px;
+
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    background: #050912;
+    color: var(--white);
+
+    font-size: 11px;
+}
+
+
+.shopProductGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+
+.shopProductCard {
+    overflow: hidden;
+
+    background: #070d18;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    transition: 0.25s ease;
+}
+
+
+.shopProductCard:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 214, 255, 0.55);
+}
+
+
+.shopProductImage {
+    height: 300px;
+
+    position: relative;
+
+    display: grid;
+    place-items: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 185, 255, 0.16),
+            transparent 48%
+        ),
+        #02050a;
+}
+
+
+.shopBadge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    padding: 6px 9px;
+
+    border-radius: 4px;
+
+    background: rgba(0, 210, 255, 0.1);
+
+    color: var(--cyan);
+
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+
+.shopProductInfo {
+    padding: 20px;
+}
+
+
+.shopProductInfo h2 {
+    margin-top: 8px;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 19px;
+    line-height: 1.2;
+}
+
+
+.shopProductInfo p {
+    min-height: 48px;
+
+    margin: 10px 0;
+
+    color: var(--muted);
+    font-size: 11px;
+}
+
+
+.rating {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    margin: 15px 0;
+}
+
+
+.rating span {
+    color: var(--cyan);
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+
+.rating small {
+    color: var(--muted);
+    font-size: 9px;
+}
+
+
+.shopProductBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 15px;
+
+    border-top: 1px solid var(--border);
+}
+
+
+.shopProductBottom strong {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+}
+
+
+.productViewButton {
+    padding: 8px 13px;
+
+    border: 1px solid var(--border);
+    border-radius: 5px;
+
+    color: var(--cyan);
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+
+.productViewButton:hover {
+    background: var(--cyan);
+    color: #00101c;
+}
+
+
+.shopGoalSection {
+    padding: 100px 0;
+
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(0, 100, 255, 0.1),
+            transparent 40%
+        ),
+        #020308;
+}
+
+
+.shopGoalGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+
+.shopGoalGrid a {
+    min-height: 180px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: rgba(7, 20, 38, 0.55);
+
+    transition: 0.25s ease;
+}
+
+
+.shopGoalGrid a:hover {
+    border-color: var(--cyan);
+    transform: translateY(-4px);
+}
+
+
+.shopGoalGrid span {
+    color: var(--cyan);
+    font-size: 10px;
+    font-weight: 800;
+}
+
+
+.shopGoalGrid strong {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+}
+
+
+.shopGoalGrid small {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+
+@media (max-width: 1000px) {
+
+    .shopLayout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .filterPanel {
+        position: static;
+    }
+
+
+    .shopProductGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .shopGoalGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .shopHero {
+        min-height: 400px;
+    }
+
+
+    .shopHero h1 {
+        font-size: 48px;
+    }
+
+
+    .shopSection {
+        padding: 60px 0;
+    }
+
+
+    .productsToolbar {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+
+    .shopProductGrid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .shopGoalGrid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .shopProductImage {
+        height: 330px;
+    }
+
+}
